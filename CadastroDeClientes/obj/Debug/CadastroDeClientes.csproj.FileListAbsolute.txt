@@ -1,0 +1,7 @@
+C:\Users\Vitor.DESKTOP-5FIPMK8\source\repos\CadastroDeClientes\bin\Debug\CadastroDeClientes.exe.config
+C:\Users\Vitor.DESKTOP-5FIPMK8\source\repos\CadastroDeClientes\bin\Debug\CadastroDeClientes.exe
+C:\Users\Vitor.DESKTOP-5FIPMK8\source\repos\CadastroDeClientes\bin\Debug\CadastroDeClientes.pdb
+C:\Users\Vitor.DESKTOP-5FIPMK8\source\repos\CadastroDeClientes\obj\Debug\CadastroDeClientes.csproj.AssemblyReference.cache
+C:\Users\Vitor.DESKTOP-5FIPMK8\source\repos\CadastroDeClientes\obj\Debug\CadastroDeClientes.csproj.CoreCompileInputs.cache
+C:\Users\Vitor.DESKTOP-5FIPMK8\source\repos\CadastroDeClientes\obj\Debug\CadastroDeClientes.exe
+C:\Users\Vitor.DESKTOP-5FIPMK8\source\repos\CadastroDeClientes\obj\Debug\CadastroDeClientes.pdb
