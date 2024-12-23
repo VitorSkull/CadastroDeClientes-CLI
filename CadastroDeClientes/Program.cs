@@ -54,6 +54,7 @@ namespace CadastroDeClientes
                             if (string.IsNullOrEmpty(email) || !match.Success)
                             {
                                 email = null;
+                                Console.WriteLine("Escreva um e-mail valido.");
                             }
                         }
 
@@ -76,6 +77,7 @@ namespace CadastroDeClientes
                             if (string.IsNullOrEmpty(cpf) || !match.Success)
                             {
                                 cpf = null;
+                                Console.WriteLine("Escreva um formato de CPF valido");
                             }
                         }
 
@@ -88,6 +90,7 @@ namespace CadastroDeClientes
                             if (string.IsNullOrEmpty(telefone) || !match.Success)
                             {
                                 telefone = null;
+                                Console.WriteLine("Digite um formato de telefone válido");
                             }
                         }
 
@@ -249,12 +252,25 @@ namespace CadastroDeClientes
                                 }
                             }
 
-                            DateTime novaDataNasc;
+                            DateTime novaDataNasc = editClient.dataNascimento;
 
                             Console.WriteLine("Digite a data de nascimento (dd/mm/yyyy): ");
-                            while (!DateTime.TryParse(Console.ReadLine(), out novaDataNasc))
+
+                            string input = Console.ReadLine();
+
+                            if (!string.IsNullOrEmpty(input))
                             {
-                                Console.WriteLine("Formato inválido. Insira novamente (dd/mm/yyyy)");
+                                while (!DateTime.TryParse(input, out novaDataNasc))
+                                {
+                                    Console.WriteLine("Formato inválido. Insira novamente (dd/mm/yyyy)");
+                                    input = Console.ReadLine();
+
+                                    if (string.IsNullOrEmpty(input))
+                                    {
+                                        novaDataNasc = editClient.dataNascimento;
+                                        break;
+                                    }
+                                }
                             }
 
                             editClient.dataNascimento = novaDataNasc;
